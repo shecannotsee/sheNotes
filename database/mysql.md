@@ -4,6 +4,8 @@
 
 ```bash
 brew install mysql
+
+sudo apt install mysql-server # ubuntu 20.04
 ```
 
 ### 1.启动mysql
@@ -66,3 +68,6 @@ mysql> UPDATE pet SET birth = '1989-08-31' WHERE name = 'Bowser';
 mysql> DELETE FROM pet;
 ```
 
+## c connect
+
+去官网下载对应mysql版本的api版本，选好平台版本解压打开就有include，lib和bin
