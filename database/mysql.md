@@ -71,3 +71,31 @@ mysql> DELETE FROM pet;
 ## c connect
 
 去官网下载对应mysql版本的api版本，选好平台版本解压打开就有include，lib和bin
+
+
+
+## 关于一些mysql的配置
+
+#### 1.不再本地环回，可让远程主机连接
+
+```bash
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+将bind-address = 127.0.0.1注销
+
+#### 2.端口问题
+
+```bash
+sudo iptables -I INPUT -p tcp --dport 8080 -j ACCEPT//开放8080端口
+```
+
+#### 3.mysql配置问题
+
+```bash
+mysql>use mysql;
+mysql> UPDATE user SET host='%' WHERE User='root';//设置任何主机均可访问
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';//设置可以通过密码的方式连接
+mysql> FLUSH PRIVILEGES;//应用更改
+```
+
