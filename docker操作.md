@@ -63,3 +63,14 @@ docker run \
 gitlab/gitlab-ce # 镜像REPOSITORY
 
 ```
+
+sudo docker cp CON_ID path
+
+
+
+```
+       -v /home/shecannotsee/Desktop/docker_info/nginx_server/config/:/etc/nginx \
+#       -v /home/shecannotsee/Desktop/docker_info/nginx_server/log:/var/log/nginx \
+#       -v /home/shecannotsee/Desktop/docker_info/nginx_server/static_resources:/usr/share/nginx \
+```
+
