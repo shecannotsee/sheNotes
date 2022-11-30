@@ -46,3 +46,9 @@ https://github.com/filebrowser/filebrowser/releases/
 ./filebrowser -a 0.0.0.0
 ```
 
+这样可以指定文件管理的目录（管理home目录）
+
+```bash
+./filebrowser -a 0.0.0.0 -r /home/
+```
+
