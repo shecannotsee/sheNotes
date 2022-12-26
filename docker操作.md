@@ -74,3 +74,19 @@ sudo docker cp CON_ID path
 #       -v /home/shecannotsee/Desktop/docker_info/nginx_server/static_resources:/usr/share/nginx \
 ```
 
+
+
+## 打包镜像
+
+将镜像打包成.tar文件
+
+```shell
+docker save image_name -o /path/to/save/image.tar
+```
+
+将.tar文件加载为docker镜像
+
+```shell
+docker load -i /path/to/image.tar
+```
+
